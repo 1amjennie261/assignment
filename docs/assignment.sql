@@ -91,6 +91,7 @@ CREATE TABLE facts_nypdshooting (
     FOREIGN KEY (loc_of_occur_desc_id) REFERENCES dim_loc_of_occur_desc(loc_of_occur_desc_id),
     FOREIGN KEY (loc_classfctn_desc_id) REFERENCES dim_loc_classfctn_desc(loc_classfctn_desc_id),
     FOREIGN KEY (date_id) REFERENCES dim_date(date_id)
+    FOREIGN KEY (location_id) REFERENCES dim_location(location_id)
 );
 
 
