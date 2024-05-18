@@ -19,6 +19,7 @@ INSERT INTO {{ ref('facts_nypd') }} (
     latitude,
     longitude,
     
+    
 )
 SELECT
     df_raw.fact_id AS incident_key,
